@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-function read() {
+function read(number = Math.floor(Math.random() * 16)) {
   let sss = fs.readFileSync("./puzzles.txt","utf8").split("\n");
   let arr =[];
   arr.push(sss[number - 1])
