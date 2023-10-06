@@ -5,6 +5,12 @@ function read() {
   console.log(sss)
 }
 read();
+
+let getRandomInteger = () => {
+  let sudokuNumber = Math.round(Math.random() * (5 -1 + 1) +1);
+  return (sudokuNumber);
+} 
+
 function solve() {
   /**
    * Принимает игровое поле в том формате, в котором его вернули из функции read.
