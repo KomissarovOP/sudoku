@@ -1,23 +1,15 @@
 const fs = require("fs");
 
-function read(number = Math.floor(Math.random() * 5)) {
-  let sss = fs.readFileSync("./puzzles.txt","utf8").split("\r\n");
-  let arr =[];
-  arr.push(sss[number - 1])
-  let arr2 = [];
-  for(let i = 0; i < arr[0].length; i+=9){
-    arr2.push([arr[0].slice(i,i+9)]);
-  }
-  let arr3 = arr2.map((row) => row[0].split("").map((char)=>char));
-  return arr3;
-  
+function read() {
+  let sss = fs.readFileSync("./puzzles.txt","utf8").split("\n");
+  console.log(sss)
 }
- console.table(read());
+read();
 
- let getSudokuNumber = () => {
-    let sudokuNumber = Math.round(Math.random() * (9 -1 + 1) +1);
-    return (sudokuNumber);
-  } 
+let getRandomInteger = () => {
+  let sudokuNumber = Math.round(Math.random() * (5 -1 + 1) +1);
+  return (sudokuNumber);
+} 
 
 // function getCoord () {
 //   let array = read();
@@ -53,7 +45,8 @@ function solve() {
   /**
    * Принимает игровое поле в том формате, в котором его вернули из функции read.
    * Возвращает игровое поле после попытки его решить.
-   *
+   */
+  
 }
 
 function isSolved() {
