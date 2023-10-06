@@ -11,6 +11,8 @@ let getRandomInteger = () => {
   return (sudokuNumber);
 } 
 
+
+
 function solve() {
   /**
    * Принимает игровое поле в том формате, в котором его вернули из функции read.
