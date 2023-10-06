@@ -12,12 +12,9 @@ function read(number = Math.floor(Math.random() * 16)) {
   return arr3;
   
 }
-console.table(read())
+// console.table(read())
 
-// let getRandomInteger = () => {
-//   let sudokuNumber = Math.round(Math.random() * (5 -1 + 1) +1);
-//   return (sudokuNumber);
-// } 
+
 
 function solve() {
   /**
